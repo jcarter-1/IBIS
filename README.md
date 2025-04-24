@@ -2,7 +2,7 @@ IBIS
 -----
 The code and analysis presented here is presented in IBIS: an Integrated Bayesian approach for unique Initial thorium corrections and age-depth models in U-Th dating of Speleothems - Kinsley et al. (2025) 
 
-This work is the result of a collaboration at BGC between Christopher Kinsley, Warren Sharp, and Jack Carter. This work was originally motivated by some complex data from Curaçao and then subsequently led to the quesiton - what else can we do with our algorithm? 
+This work is the result of a collaboration at Berkeley Geochronology Center (BGC) between Christopher Kinsley, Warren Sharp, and Jack Carter. This work was originally motivated by some complex data from Curaçao and then subsequently led to the quesiton - what else can we do with our algorithm? 
 
 Why it matters?
 ---------------
