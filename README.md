@@ -2,6 +2,8 @@ IBIS
 -----
 The code and analysis presented here is presented in IBIS: an Integrated Bayesian approach for unique Initial thorium corrections and age-depth models in U-Th dating of Speleothems - Kinsley et al. (2025) 
 
+This work is the result of a collaboration at BGC between Christopher Kinsley, Warren Sharp, and Jack Carter. This work was originally motivated by some complex data from Curaçao and then subsequently led to the quesiton - what else can we do with our algorithm? 
+
 Why it matters?
 ---------------
 U-Th dating is a pivotal chronometer for the estimation of accurate ages anchoring paleoclimate recored from ~present day to ~650 ka. For accurate U-Th dating, a sample must contain: 
