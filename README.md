@@ -21,17 +21,28 @@ Proxies recorded in speleothems offer insight into past patterns of rainfall, wi
 
 Thoth
 -----
-We create an algorithm for the estimation of prior for the initial Th composition. We design a Monte Carlo method that utilizes batch running 
+We create an algorithm for the estimation of prior for the initial Th composition. We design a Monte Carlo method that attempts to build a reasonale non-parametric prior for ($^{230}$Th/$^{232}$Th)$_{A0}$ - the initial thorium composition - for a given speleothem sample. We use this algorithm to attempt to capture the "true" variability and likely modes of the initial thorium distribution. We provide an illustration of how thoth works in the Thoth folder. We use the data of Faraji et al. (2021) - the twinned U-Th dating and lamina counting age model provides a unique scenario to valid the Thoth appraoch. 
+
+
+Faraji, M., Borsato, A., Frisia, S., Hellstrom, J.C., Lorrey, A., Hartland, A., Greig, A. and Mattey, D.P., 2021. Accurate dating of stalagmites from low seasonal contrast tropical Pacific climate using Sr 2D maps, fabrics and annual hydrological cycles. Scientific Reports, 11(1), p.2178.
 
 
 Intial Thorium MCMC
 -------------------
+IBIS is a two stage model. The first makes inferences on the U-Th ages with unique initial thorium composition. This model makes use of a stratigraphic log-likelihood function to find the coupled three-vector of activity ratios (230Th/238U, 232Th/238U, and 234U/238U) and ($^{230}$Th/$^{232}$Th)$_{A0}$ which aligns the ages in stratigraphic order. 
+
 
 Age-Depth MCMC
 --------------
+The second part of the IBIS model is a Bayesian Age-Depth model. This takes the output ages from the first part of the model and perform a second MCMC algorithm to make an inference on the age-depth relationship. This is a modular approach such that the U-Th ages from the initial part can be extract and a user can choose which age-model they prefer to use (e.g., Comas-Bru et al. 2020). 
+
+Comas-Bru, L., Rehfeld, K., Roesch, C., Amirnezhad-Mozhdehi, S., Harrison, S.P., Atsawawaranunt, K., Ahmad, S.M., Ait Brahim, Y., Baker, A., Bosomworth, M. and Breitenbach, S.F., 2020. SISALv2: A comprehensive speleothem isotope database with multiple age-depth models. Earth System Science Data Discussions, 2020, pp.1-47.
 
 Example List
 ------------
+We provide a suite of examples to display the efficacy of the IBIS model framework. 
+
+These are included in the manuscript which can be found here: 
 
 
 
