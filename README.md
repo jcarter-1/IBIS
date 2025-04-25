@@ -21,10 +21,15 @@ Proxies recorded in speleothems offer insight into past patterns of rainfall, wi
 
 Thoth
 -----
-We create an algorithm for the estimation of prior for the initial Th composition. We design a Monte Carlo method that attempts to build a reasonale non-parametric prior for ($^{230}$Th/$^{232}$Th)$_{A0}$ - the initial thorium composition - for a given speleothem sample. We use this algorithm to attempt to capture the "true" variability and likely modes of the initial thorium distribution. We provide an illustration of how thoth works in the Thoth folder. We use the data of Faraji et al. (2021) - the twinned U-Th dating and lamina counting age model provides a unique scenario to valid the Thoth appraoch. 
+For the complete mathematical closure of the Bayesian model we are required to form a mathematical description - in the form of a distribution - for the 230Th/232Th initial activity ratio (230Th/232ThA0)for the speleothem sample. However, this requires careful thought as 230Th/232ThA0 can vary in space and time. Potentially showing variability throughout a single speleothem sample. Moseley et al. (2015) performed U-Th analysis on a speleothem from the Yucatán Peninsula and documented 4 distinct growth intervals. Isochron analysis on these four intervals inferred unique (230Th/232ThA0) ranging from ~3 to >20. In the Thoth 
+
+
+We provide an illustration of how thoth works in the Thoth folder. We use the data of Faraji et al. (2021) - the twinned U-Th dating and lamina counting age model provides a unique scenario to valid the Thoth appraoch. 
 
 
 Faraji, M., Borsato, A., Frisia, S., Hellstrom, J.C., Lorrey, A., Hartland, A., Greig, A. and Mattey, D.P., 2021. Accurate dating of stalagmites from low seasonal contrast tropical Pacific climate using Sr 2D maps, fabrics and annual hydrological cycles. Scientific Reports, 11(1), p.2178.
+
+Moseley, G.E., Richards, D.A., Smart, P.L., Standish, C.D., Hoffmann, D.L., ten Hove, H. and Vinn, O., 2015. Early–middle Holocene relative sea-level oscillation events recorded in a submerged speleothem from the Yucatán Peninsula, Mexico. The Holocene, 25(9), pp.1511-1521.
 
 
 Intial Thorium MCMC
