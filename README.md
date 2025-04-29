@@ -36,6 +36,10 @@ Intial Thorium MCMC
 -------------------
 IBIS is a two stage model. The first makes inferences on the U-Th ages with unique initial thorium composition. This model makes use of a stratigraphic log-likelihood function to find the coupled three-vector of activity ratios (230Th/238U, 232Th/238U, and 234U/238U) and ($^{230}$Th/$^{232}$Th)$_{A0}$ which aligns the ages in stratigraphic order. 
 
+The Initial Thorium move
+========================
+We use a cumulative density function (CDF)-space Metropolis move. We take the current parameter value, say x, and map it through its prior CDF. Our prior is non-parametric so we initially numerical calculate this through interpolation. We propose a move in CDF-space. Say u' is our proposed value, we propose u' = (u + $\delta$) mod 1, $\delta$ $\sim$ N(0, $\sigma$). Because the normal, N, is symmetric and we use a wrapped interval, the Hastings ratio from the proposal cancels. We then convert the "real" value by inverting the CDF. We then perform the traditional Metropolis acceptance criterion and see if the proposed value should be accepted or rejected. 
+
 
 Age-Depth MCMC
 --------------
