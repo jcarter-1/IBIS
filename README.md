@@ -34,7 +34,7 @@ Moseley, G.E., Richards, D.A., Smart, P.L., Standish, C.D., Hoffmann, D.L., ten 
 
 Intial Thorium MCMC
 -------------------
-IBIS is a two stage model. The first makes inferences on the U-Th ages with unique initial thorium composition. This model makes use of a stratigraphic log-likelihood function to find the coupled three-vector of activity ratios (230Th/238U, 232Th/238U, and 234U/238U) and ($^{230}$Th/$^{232}$Th)$_{A0}$ which aligns the ages in stratigraphic order. 
+IBIS is a two stage model. The first makes inferences on the U-Th ages with unique initial thorium composition. This model makes use of a stratigraphic log-likelihood function to find the coupled three-vector of activity ratios (230Th/238U, 232Th/238U, and 234U/238U) and 230Th/232ThA0 which aligns the ages in stratigraphic order. 
 
 The Initial Thorium move
 ========================
