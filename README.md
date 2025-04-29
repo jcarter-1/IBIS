@@ -38,7 +38,7 @@ IBIS is a two stage model. The first makes inferences on the U-Th ages with uniq
 
 The Initial Thorium move
 ========================
-We use a cumulative density function (CDF)-space Metropolis move. We take the current parameter value, say x, and map it through its prior CDF. Our prior is non-parametric so we initially numerical calculate this through interpolation. We propose a move in CDF-space. Say u' is our proposed value, we propose u' = (u + $\delta$) mod 1, $\delta$ $\sim$ N(0, $\sigma$). Because the normal, N, is symmetric and we use a wrapped interval, the Hastings ratio from the proposal cancels. We then convert the "real" value by inverting the CDF. We then perform the traditional Metropolis acceptance criterion and see if the proposed value should be accepted or rejected. 
+We use a cumulative density function (CDF)-space Metropolis move. We take the current parameter value, say x, and map it through its prior CDF. Our prior is non-parametric so we initially numerical calculate this through interpolation. We propose a move in CDF-space. Say u' is our proposed value, we propose u' = (u + $\delta$) mod 1, $\delta$ $\sim$ N(0, $\sigma$). Because the normal, N, is symmetric and we use a wrapped interval, the Hastings ratio from the proposal cancels. We then convert the "real" value by inverting the CDF. We then perform the traditional Metropolis acceptance criterion and see if the proposed value should be accepted or rejected (Gilks, Richardson, & Spiegelhalter 1996). 
 
 
 Age-Depth MCMC
@@ -52,6 +52,22 @@ Example List
 We provide a suite of examples to display the efficacy of the IBIS model framework. 
 
 These are included in the manuscript which can be found here: 
+
+
+References
+----------
+
+Faraji, M., Borsato, A., Frisia, S., Hellstrom, J.C., Lorrey, A., Hartland, A., Greig, A. and Mattey, D.P., 2021. Accurate dating of stalagmites from low seasonal contrast tropical Pacific climate using Sr 2D maps, fabrics and annual hydrological cycles. Scientific Reports, 11(1), p.2178.
+
+Gilks, W.R., Richardson, S. and Spiegelhalter, D.J., 1996. (1996), Markov Chain Monte Carlo in Practice.
+
+Hoffmann, D.L., Spötl, C. and Mangini, A., 2009. Micromill and in situ laser ablation sampling techniques for high spatial resolution MC-ICPMS U-Th dating of carbonates. Chemical Geology, 259(3-4), pp.253-261.
+
+Moseley, G.E., Edwards, R.L., Wendt, K.A., Cheng, H., Dublyansky, Y., Lu, Y., Boch, R. and Spötl, C., 2016. Reconciliation of the Devils Hole climate record with orbital forcing. Science, 351(6269), pp.165-168.
+
+Weber, M., Scholz, D., Schröder-Ritzrau, A., Deininger, M., Spötl, C., Lugli, F., Mertz-Kraus, R., Jochum, K.P., Fohlmeister, J., Stumpf, C.F. and Riechelmann, D.F., 2018. Evidence of warm and humid interstadials in central Europe during early MIS 3 revealed by a multi-proxy speleothem record. Quaternary Science Reviews, 200, pp.276-286.
+
+
 
 
 
